@@ -1,18 +1,20 @@
 import React from 'react'
+import Code from './Code'
+import Welcome from './Welcome'
 
 function ConditionalComponent() {
-    const display = true
+    const display = false
     if (display) {
         return (
             <div>
-                <h1>Conditional Component</h1>
+                <Code />
             </div>
         )
     }
     else {
         return (
             <div>
-                <h1>Code with me</h1>
+                <Welcome />
             </div>
         )
     }
