@@ -1,5 +1,6 @@
 import ConditionalComponent from "./components/ConditionalComponent"
 import Fruits from "./components/Fruits"
+import Message from "./components/Message"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Fruits />
       <ConditionalComponent />
+      <Message />
     </div>
   )
 }
