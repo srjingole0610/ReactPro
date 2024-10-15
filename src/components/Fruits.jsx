@@ -1,4 +1,5 @@
 import React from 'react'
+import Fruit from './fruit'
 
 function Fruits() {
     const Fruits = [
@@ -14,9 +15,7 @@ function Fruits() {
             <ul>
                 {
                     Fruits.map((fruit, index) => {
-                        return <li key={index}>
-                            {fruit.emoji} {fruit.name} ${fruit.price}
-                        </li>
+                        return <Fruit key={index} emoji={fruit.emoji} name={fruit.name} price={fruit.price} />
                     })
                 }
             </ul>
