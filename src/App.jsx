@@ -1,4 +1,5 @@
 import ConditionalComponent from "./components/ConditionalComponent"
+import Counter from "./components/Counter"
 import Fruits from "./components/Fruits"
 import Message from "./components/Message"
 
@@ -9,6 +10,7 @@ function App() {
       <Fruits />
       <ConditionalComponent />
       <Message />
+      <Counter />
     </div>
   )
 }
