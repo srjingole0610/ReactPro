@@ -1,7 +1,7 @@
-const Hello = ({ message, name, emoji }) => {
+const Hello = (props) => {
     return (
         <div>
-            <h1>{message} {name} {emoji}</h1>
+            <h1>{props.message} {props.name} {props.emoji} {props.seatNumber}</h1>
         </div>
     )
 }
