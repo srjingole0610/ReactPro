@@ -1,13 +1,24 @@
 import React from 'react'
 
 function Fruits() {
-    const Fruits = ['Apple', 'Orange', 'PineApple', 'Banana', 'Guava']
+    const Fruits = [
+        { name: 'Apple', price: 10, emoji: '🍎' },
+        { name: 'Orange', price: 5, emoji: '🍊' },
+        { name: 'PineApple', price: 11, emoji: '🍍' },
+        { name: 'Banana', price: 3, emoji: '🍌' },
+        { name: 'Cherry', price: 15, emoji: '🍒' }
+
+    ]
     return (
         <div>
             <ul>
-                {Fruits.map((fruit, ind) => {
-                    return <li key={ind}>{fruit}</li>
-                })}
+                {
+                    Fruits.map((fruit, index) => {
+                        return <li key={index}>
+                            {fruit.emoji} {fruit.name} ${fruit.price}
+                        </li>
+                    })
+                }
             </ul>
         </div>
     )
